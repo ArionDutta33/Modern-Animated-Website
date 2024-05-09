@@ -43,3 +43,34 @@ const loadingAnimation = () => {
     })
 }
 loadingAnimation()
+
+document.addEventListener("mousemove", (dets) => {
+    gsap.to(".cursor", {
+        left: dets.x,
+        top: dets.y
+    })
+})
+
+document.querySelector("#child1").addEventListener("mouseenter", () => {
+    gsap.to(".cursor", {
+        transform: `translate(-50%,-50%) scale(1)`
+    })
+})
+document.querySelector("#child1").addEventListener("mouseleave", () => {
+    gsap.to(".cursor", {
+        transform: `translate(-50%,-50%) scale(0)`
+    })
+})
+
+document.querySelectorAll(".child").forEach((e) => {
+    e.addEventListener("mouseenter", () => {
+        gsap.to(".cursor", {
+            transform: `translate(-50%,-50%) scale(1)`
+        })
+    })
+    e.addEventListener("mouseleave", () => {
+        gsap.to(".cursor", {
+            transform: `translate(-50%,-50%) scale(0)`
+        })
+    })
+})

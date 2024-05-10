@@ -25,6 +25,59 @@ body {
 
 }
 
+.nav {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.nav-part1 {
+    height: 82px;
+    background: red;
+    overflow: hidden;
+}
+
+.nav-part1 svg {
+    display: block;
+}
+
+.nav .nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.links {
+    padding: 10px;
+}
+
+.nav-part2 .links a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 30px;
+}
+
+.icons {
+    padding: 10px;
+    border-radius: 50px;
+    background: #f7f7f7;
+}
+
+.nav-part2 .icons i {
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 100;
+}
+
 .page1 {
     min-height: 100vh;
     width: 100%;
